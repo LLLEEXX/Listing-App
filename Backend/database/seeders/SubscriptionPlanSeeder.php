@@ -1,0 +1,232 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class SubscriptionPlanSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+
+        $plans = [
+            [
+                'subscription_type' => 'FREE',
+                'Price' => 0,
+                'rental_listing' => 3,
+                'sale_listing' => 0,
+                'red_coins' => 0,
+                'silver_coins' => 0,
+                'rental_limit' => '30K Below',
+                'sale_limit' => 'N/A',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subscription_type' => 'Monthly(Basic)',
+                'Price' => 500,
+                'rental_listing' => 10,
+                'sale_listing' => 0,
+                'red_coins' => 10,
+                'silver_coins' => 0,
+                'rental_limit' => '40K Below',
+                'sale_limit' => '5M Below',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subscription_type' => 'Monthly(Standard)',
+                'Price' => 1000,
+                'rental_listing' => 10,
+                'sale_listing' => 10,
+                'red_coins' => 10,
+                'silver_coins' => 5,
+                'rental_limit' => '60K Below',
+                'sale_limit' => '10M Below',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subscription_type' => 'Monthly(pro)',
+                'Price' => 2000,
+                'rental_listing' => 20,
+                'sale_listing' => 20,
+                'red_coins' => 20,
+                'silver_coins' => 10,
+                'rental_limit' => '80K Below',
+                'sale_limit' => '20M Below',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subscription_type' => 'Monthly(Master)',
+                'Price' => 3500,
+                'rental_listing' => 40,
+                'sale_listing' => 40,
+                'red_coins' => 30,
+                'silver_coins' => 20,
+                'rental_limit' => '80K Above',
+                'sale_limit' => '20M Above',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            //Quarterly
+            [
+                'subscription_type' => 'Quarterly(Basic)',
+                'Price' => 1500,
+                'rental_listing' => 10,
+                'sale_listing' => 0,
+                'red_coins' => 30,
+                'silver_coins' => 0,
+                'rental_limit' => '40K Below',
+                'sale_limit' => '5M Below',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subscription_type' => 'Quarterly(Standard)',
+                'Price' => 3000,
+                'rental_listing' => 10,
+                'sale_listing' => 10,
+                'red_coins' => 30,
+                'silver_coins' => 15,
+                'rental_limit' => '60K Below',
+                'sale_limit' => '10M Below',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subscription_type' => 'Quarterly(pro)',
+                'Price' => 6000,
+                'rental_listing' => 20,
+                'sale_listing' => 20,
+                'red_coins' => 60,
+                'silver_coins' => 30,
+                'rental_limit' => '80K Below',
+                'sale_limit' => '20M Below',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subscription_type' => 'Quarterly(Master)',
+                'Price' => 10500,
+                'rental_listing' => 40,
+                'sale_listing' => 40,
+                'red_coins' => 90,
+                'silver_coins' => 60,
+                'rental_limit' => '80K Above',
+                'sale_limit' => '20M Above',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            //Semi Annual
+            [
+                'subscription_type' => 'Semi-Annual(Basic)',
+                'Price' => 3000,
+                'rental_listing' => 10,
+                'sale_listing' => 0,
+                'red_coins' => 60,
+                'silver_coins' => 0,
+                'rental_limit' => '40K Below',
+                'sale_limit' => '5M Below',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subscription_type' => 'Semi-Annual(Standard)',
+                'Price' => 6000,
+                'rental_listing' => 10,
+                'sale_listing' => 10,
+                'red_coins' => 60,
+                'silver_coins' => 30,
+                'rental_limit' => '60K Below',
+                'sale_limit' => '10M Below',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subscription_type' => 'Semi-Annual(pro)',
+                'Price' => 12000,
+                'rental_listing' => 20,
+                'sale_listing' => 20,
+                'red_coins' => 120,
+                'silver_coins' => 60,
+                'rental_limit' => '80K Below',
+                'sale_limit' => '20M Below',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subscription_type' => 'Semi-Annual(Master)',
+                'Price' => 21000,
+                'rental_listing' => 40,
+                'sale_listing' => 40,
+                'red_coins' => 180,
+                'silver_coins' => 120,
+                'rental_limit' => '80K Above',
+                'sale_limit' => '20M Above',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+             //Annually
+
+             [
+                'subscription_type' => 'Annually(Basic)',
+                'Price' => 6000,
+                'rental_listing' => 10,
+                'sale_listing' => 0,
+                'red_coins' => 120,
+                'silver_coins' => 0,
+                'rental_limit' => '40K Below',
+                'sale_limit' => '5M Below',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subscription_type' => 'Annually(Standard)',
+                'Price' => 12000,
+                'rental_listing' => 10,
+                'sale_listing' => 10,
+                'red_coins' => 120,
+                'silver_coins' => 60,
+                'rental_limit' => '60K Below',
+                'sale_limit' => '10M Below',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subscription_type' => 'Annually(pro)',
+                'Price' => 24000,
+                'rental_listing' => 20,
+                'sale_listing' => 20,
+                'red_coins' => 240,
+                'silver_coins' => 120,
+                'rental_limit' => '80K Below',
+                'sale_limit' => '20M Below',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subscription_type' => 'Annually(Master)',
+                'Price' => 42000,
+                'rental_listing' => 40,
+                'sale_listing' => 40,
+                'red_coins' => 360,
+                'silver_coins' => 240,
+                'rental_limit' => '80K Above',
+                'sale_limit' => '20M Above',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+        ];
+
+        foreach ($plans as $plan) {
+            DB::table('subscription_plan')->insert($plan);
+        }
+    }
+}

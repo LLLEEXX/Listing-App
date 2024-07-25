@@ -1,0 +1,374 @@
+.subType {
+  border: 2px solid black;
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+.userAccountMainCont {
+  margin-top: 80px;
+}
+.userDetailsPic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+thead {
+  text-align: center;
+}
+.centerTD {
+  text-align: center;
+}
+
+/*Edit and View Button*/
+.viewBtn {
+  background: #187afaec !important;
+}
+.viewBtn,
+.editBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 2px;
+  height: 40px;
+  width: 85px;
+  border: none;
+  background: #0fb41cec;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.viewIcon,
+.editIcon {
+  display: none;
+}
+
+.viewLabel,
+.editLabel {
+  line-height: 22px;
+  font-size: 15px;
+  color: #f7f7f7;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+.viewBtn:hover {
+  background: #01397eec !important;
+}
+.editBtn:hover {
+  background: #016306c4;
+}
+.editBtn:hover .svg-icon {
+  animation: lr 1s linear infinite;
+}
+
+.IconViewBtn:hover {
+  background: #01397eec !important;
+}
+
+.IconViewBtn {
+  background: #187afaec !important;
+  width: 40px;
+  height: 40px;
+}
+
+.IconEditBtn {
+  background: #1F7A1F;
+  width: 40px;
+  height: 40px;
+}
+
+.IconEditBtn:hover {
+  background: #016306c4;
+}
+
+.IconEditBtn:hover .svg-icon {
+  animation: lr 1s linear infinite;
+}
+
+@keyframes lr {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-1px);
+  }
+
+  75% {
+    transform: translateX(1px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*Delete Button*/
+.deleteBtn {
+  width: 40px;
+  height: 40px;
+  background-color: #fd5050;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  gap: 2px;
+}
+
+.delIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.delIcon path {
+  fill: white;
+}
+
+.deleteBtn:hover {
+  transition-duration: 0.3s;
+  background-color: rgb(228, 4, 4);
+  align-items: center;
+  gap: 0;
+}
+
+.bin-top {
+  transform-origin: bottom right;
+}
+.deleteBtn:hover .bin-top {
+  transition-duration: 0.5s;
+  transform: rotate(160deg);
+}
+
+/* Navbar Design*/
+.tabText {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #5e5d5d;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+.tabText:hover,
+.tabText.active {
+  font-size: 18px;
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.standout-text {
+  color: #000;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.tabTitle {
+  border-bottom: "2px solid #000";
+}
+/* No Lead Credit*/
+.noCredit {
+  display: none;
+}
+
+/* Lead City List*/
+.mainCon {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.cityHolder {
+  background-color: #e3e5e8;
+  width: 100%;
+  padding: 3px;
+  margin: 5px;
+  display: flex;
+  border-radius: 2px;
+}
+.cta {
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cta span {
+  padding-bottom: 5px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-2px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*Learn More Design*/
+.get-lead-button {
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica, "sans-serif";
+  transition: all 0.2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: #cfef00;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.get-lead-button:hover {
+  background: #c4e201;
+}
+
+.get-lead-button > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.get-lead-button:hover svg {
+  transform: translateX(5px);
+}
+
+.get-lead-button:active {
+  transform: scale(0.95);
+}
+
+/*User Account Setting Design*/
+
+.settingMainCon {
+  margin-top: 100px;
+}
+.formCon {
+  width: 80%;
+  background-color: rgba(179, 175, 175, 0.2);
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+.formTitle:first-child {
+  background-color: rgba(179, 175, 175, 0.5);
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.formTitle:not(:first-child) {
+  background-color: rgba(179, 175, 175, 0.5);
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.formTxt {
+  border: 1px solid black;
+  width: 50%;
+}
+.circle-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+.userDetailsChangePic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.change-photo-button {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333333;
+  width: 100%;
+  text-align: center;
+}
+.change-photo-button input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.saveBtn {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .formCon {
+    width: 95%;
+  }
+  .formTxt {
+    width: 90%;
+  }
+  .viewIcon,
+  .editIcon {
+    display: block;
+  }
+  .viewLabel,
+  .editLabel {
+    display: none;
+  }
+}

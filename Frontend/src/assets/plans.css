@@ -1,0 +1,242 @@
+.section-pricing {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 120px 0;
+    color: #4a6985;
+}
+
+.section-pricing .header-section-plans .plans-buttons {
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 0 10px 30px rgb(236, 229, 228);
+    padding: 10px;
+    font-family: "Rubik", sans-serif;
+}
+
+.section-pricing .header-section-plans .plans-buttons .monthly,
+.section-pricing .header-section-plans .plans-buttons .quarterly,
+.section-pricing .header-section-plans .plans-buttons .semiannual,
+.section-pricing .header-section-plans .plans-buttons .annually {
+    display: flex;
+    margin-bottom: 5px;
+    padding: 15px 40px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.section-pricing .header-section-plans .plans-buttons span:not(:last-child) {
+    margin-right: 5px;
+}
+
+.section-pricing .header-section-plans .plans-buttons .monthly:hover,
+.section-pricing .header-section-plans .plans-buttons .quarterly:hover,
+.section-pricing .header-section-plans .plans-buttons .semiannual:hover,
+.section-pricing .header-section-plans .plans-buttons .annually:hover {
+    border: 1px solid #0B6BCB;
+}
+
+.section-pricing .header-section-plans .plans-buttons .active {
+    background-color: #0B6BCB;
+    border: 1px solid #0B6BCB;
+    color: #fff;
+}
+
+.section-pricing .header-section-plans .plans-buttons .perc {
+    display: inline-block;
+    background-color: #0B6BCB;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    padding: 1px 12px;
+    margin-left: 10px;
+}
+
+.section-pricing .header-section-plans .plans-title {
+    color: #000;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.section-pricing .header-section-plans .description {
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.section-pricing .plans .single-plan {
+    padding: 60px 35px;
+    background-color: #fff;
+    border-bottom: 6px solid #0B6BCB;
+}
+
+.coins-img {
+    width: 23px;
+    height: 23px;
+}
+
+.section-pricing .plans .single-plan .p-ty-title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: #0B6BCB;
+}
+
+.section-pricing .plans .single-plan .div-description p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.div-description {
+    margin-bottom: 20px;
+}
+
+.section-pricing .single-plan .icon {
+    display: inline-block;
+    margin-bottom: 15px;
+    border: 2px solid rgba(255, 107, 143, 0.1);
+    border-radius: 50%;
+    padding: 25px;
+}
+
+.section-pricing .plans .single-plan .price {
+    margin-bottom: 35px;
+}
+
+.section-pricing .plans .single-plan .price .peso {
+    color: #000;
+}
+
+.section-pricing .plans .single-plan .price .number {
+    color: #000;
+    font-family: "Rubik", sans-serif;
+    font-size: 49px;
+}
+
+.section-pricing .plans .single-plan .price .plan-name {
+    display: block;
+    margin-top: -10px;
+}
+
+.section-pricing .plans .single-plan a.subscribe-button {
+    display: inline-block;
+    background-color: #0B6BCB;
+    color: #fff;
+    padding: 10px 23px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.section-pricing .plans .single-plan .subscribe-button:hover {
+    box-shadow: 0 5px 10px 0px rgba(255, 107, 143, .4);
+}
+
+.section-pricing .plans .active {
+    position: relative;
+    padding: 80px 30px;
+    color: #fff;
+    border: none;
+}
+
+.section-pricing .plans .active:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right bottom, #40008a, #0B6BCB);
+    opacity: 0.9;
+    z-index: 10;
+}
+
+.section-pricing .plans .active .plans-content {
+    position: inherit;
+    z-index: 20;
+}
+
+.section-pricing .plans .active .p-ty-title {
+    color: #fff;
+}
+
+.section-pricing .active .icon {
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.section-pricing .plans .active .price .peso {
+    color: #fff;
+}
+
+.section-pricing .plans .active .price .number {
+    color: #fff;
+}
+
+.section-pricing .plans .active a.subscribe-button {
+    background-color: #fff;
+    color: #000;
+}
+
+.section-pricing .plans .active .subscribe-button:hover {
+    box-shadow: 0 5px 10px 0px rgba(255, 255, 255, .4);
+}
+
+@media (max-width: 575.99px) {
+    .section-pricing .header-section-plans .plans-buttons {
+        width: 100%;
+    }
+
+    .section-pricing .header-section-plans {
+        margin-bottom: 20px;
+    }
+
+    .section-pricing .header-section-plans .plans-title {
+        font-size: 50px;
+        width: 100%;
+    }
+
+    .section-pricing .header-section-plans .description {
+        font-size: 16px;
+    }
+
+    .div-description p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .div-description {
+        margin-bottom: 20px;
+    }
+
+    .section-pricing .plans {
+        flex-wrap: wrap;
+    }
+
+    .section-pricing .plans .single-plan {
+        border: 1px solid #0B6BCB;
+        padding: 40px 20px;
+        margin-bottom: 15px;
+        flex: 0 0 100%;
+    }
+
+    .section-pricing .plans .active {
+        padding: 60px 30px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+    .section-pricing .header-section-plans {
+        margin-bottom: 60px;
+    }
+
+    .section-pricing .header-section-plans .plans-title {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+    .section-pricing .header-section-plans {
+        margin-bottom: 60px;
+    }
+}

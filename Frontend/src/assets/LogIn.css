@@ -1,0 +1,56 @@
+.login-bg {
+  border-radius: 10px;
+}
+
+.titleInLogin h3 {
+  color: #000;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.tlSpan {
+  color: #3D3D3D;
+  font-size: 15px;
+}
+
+.loginFormContainer {
+  margin-top: 25px;
+}
+
+.f-label {
+  color: #3D3D3D;
+}
+
+.fPassDiv {
+  margin-top: 15px;
+}
+
+.fPassLink {
+  color: #3D3D3D;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top:12px;
+}
+
+.btnDiv-l {
+margin-top: 25px;
+}
+
+.signUpDiv p{
+  margin-top: 30px;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .l-i-login {
+    display: none;
+  }
+
+  .signUpDiv, .titleInLogin {
+    text-align: center;
+  }
+
+  .loginFormContainer {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,119 @@
+.font-container {
+  font-family: 'Poppins', sans-serif;
+}
+
+.mr-2 {
+  height: 40px;
+}
+
+.d-flex.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.searchTab {
+  width: 60%;
+  margin: auto;
+}
+
+
+.navbar {
+  transition: background-color 0.3s, height 0.3s, box-shadow 0.3s ease;
+}
+
+.navlinkText {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.navbar.transparent {
+  background-color: transparent;
+  height: 80px;
+}
+
+.navbar.scrolled {
+  background-color: white;
+  color: black;
+  height: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+
+
+.navbar.otherPage {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.otherHeight {
+  height: 60px;
+}
+
+
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .searchTab {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navGap {
+    gap: 12px;
+  }
+}
+
+/*GIVES BORDER TO THE NAVBAR BUTTON THAT IS ACTIVE*/
+/* .active{
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.text-dark.active{
+  padding: 5px;
+  border: 1px solid black;
+} */
+
+.languageCheckBox {
+  /* Language NEEDED CHECKBOX(MAIN CONTAINER) */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.languageChangeBtn {
+  width: 26%;
+  height: 50px;
+}
+
+/*PROFILE IMAGE CSS*/
+.profileImageUser {
+  height: 42px;
+  width: 42px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.fade-out {
+  font-size: 18px;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+  color: rgb(255, 22, 22);
+}
+
+.hidden {
+  display: none;
+}
+

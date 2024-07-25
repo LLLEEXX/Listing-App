@@ -1,0 +1,28 @@
+.mainInquirePropCont{
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 1262px){
+    .mainInquirePropCont{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+.googleMapguide{
+    width: 100%;
+    height: 20rem;
+    border-radius: 15px;
+}
+
+.titleDivRentProp{
+    margin-top: 80px;
+}
+
+/* .sectionCenterItems{
+    display: grid;
+    place-items: center;
+} */
+

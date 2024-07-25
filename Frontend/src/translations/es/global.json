@@ -1,0 +1,76 @@
+{
+  "navbar": {
+    "Home": "página principal",
+    "Property Management Services": "Administración de propiedades",
+    "Post a Property": "Anunciar una propiedad",
+    "Login": "Iniciar sesión",
+    "Join": "Registrarse",
+    "Rent": "Se alquila",
+    "Sale": "En venta",
+    "language": "Seleccione un idioma:",
+    "GreetSignIn": "Bienvenido a Property Web Hub",
+    "Username": "Nombre de usuario",
+    "Password": "Contraseña",
+    "Repassword": "Confirme su contraseña:",
+    "Profile": "Perfil",
+    "FirstName": "Introduzca su nombre de pila",
+    "LastName": "Introduzca su apellido",
+    "PhoneNum": "Número de teléfono",
+    "TermsCond": "He leído y acepto los Términos y Condiciones",
+    "Submit": "Enviar",
+    "Find" : "Encuentrame una propiedad"
+  },
+
+  "SearchTab": {
+    "Title": "¿Qué estás buscando",
+    "Action": "Seleccione una acción",
+    "PropType": "Seleccione un tipo de propiedad",
+    "City": "Ingrese una ciudad",
+    "Filter": "Enviar",
+    "Rent": "alquila",
+    "Buy": "Comprar",
+    "Condo": "Condominio",
+    "HouseLot": "Casa y lote",
+    "Lot": "Lote",
+    "WareHouse": "Almacén",
+    "CommSpace": "Local comercial",
+    "Off": "Oficina"
+  },
+
+  "FeaturedList": {
+    "Title": "Explore nuestros nuevos inmuebles",
+    "subTitle": "Descubra algunas de nuestras últimas propiedades",
+    "Condo": "Condominio",
+    "HouseLot": "Casa y lote",
+    "Lot": "Lote",
+    "WareHouse": "Almacén",
+    "CommSpace": "Local comercial",
+    "Off": "Oficina"
+  },
+
+  "Banner": {
+    "Title": "¡Respire tranquilo! Su propiedad está en buenas manos.",
+    "DesBanner": "Somos una plataforma integral que te conecta con profesionales de confianza para todas las necesidades de mantenimiento de tu propiedad. Ahorre tiempo y esfuerzo: deje que le encontremos el contratista adecuado. ¡Deje que",
+    "DesBannerTwo": "se encargue de todas sus necesidades de mantenimiento de propiedades!",
+    "ServicesBtn": "Explore nuestros servicios",
+    "ApplyServ": "Solicitar nuestros servicios"
+  },
+
+  "ExpNeigh": {
+    "Title": "Descubre nuestros barrios",
+    "subTitle": "Sumérgete en nuestros barrios y explora con detenimiento para encontrar la vivienda ideal para ti",
+    "Explore": "Descubre"
+  },
+
+  "Footer": {
+    "Soc": "¡Nuestras redes sociales!",
+    "Comp": "Nuestra Compañía",
+    "aboutUse": "Acerca de Nosotros",
+    "Advertise": "Anúnciate con nosotros",
+    "planPri": "Plan y precios",
+    "helpSupp": "Servicio de asistencia",
+    "Terms": "Servicio de asistencia",
+    "FAQ": "preguntas frecuentes",
+    "email": "Envíanos un correo electrónico"
+  }
+}

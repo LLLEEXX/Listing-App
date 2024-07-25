@@ -1,0 +1,35 @@
+:root {
+  --Sage-Color: #d2e3c8;
+  --teal-Color: #64ccc5;
+  --Dark-Color: #242424;
+}
+
+.explorePageMainCont {
+  margin-top: 20px;
+}
+
+.Filter-Property {
+  margin-top: 80px;
+}
+
+.asideFilterProp {
+  position: sticky;
+  left: 0;
+  padding: 15px;
+  width: 30rem;
+}
+
+.MainExplorePageCont {
+  display: flex;
+  margin-top: 60px;
+}
+
+.Explore-Property-List {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/*Start Card Css*/
+
+

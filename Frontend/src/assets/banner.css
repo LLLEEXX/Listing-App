@@ -1,0 +1,94 @@
+.banner-card {
+    margin-top: 100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("/assets/homei.jpg");
+    padding: 70px 0px 70px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carouselLogo {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0.3, 0.3);
+  border-radius: 10px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 35rem; 
+  border-radius: 10px; 
+  object-fit: cover; 
+}
+
+.ft-company {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.BtnExplore {
+    width: fit-content;
+    white-space: nowrap;
+}
+.carouselContainer-banner {
+  width: 550px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contentb {
+  margin-top: 160px;
+  color: #fff;
+}
+
+.banner-card p,
+.carbon p {
+    margin: 15px 0 30px;
+}
+
+
+@media(max-width: 700px){
+
+    .banner-card .contentb p {
+        display: none;
+      }
+    
+      .banner-card .contentb h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      .carouselContainer-banner {
+        width: 100%;
+      }
+
+      .carouselLogo {
+        margin-top: 25px;
+      }
+
+      .contentb {
+        margin-top: 0px;
+      }
+
+      .banner-card {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding: 100px 0px 0px 0px;
+      }
+
+      .bann-btn{
+        margin-top: 10px;
+        width: 100%;
+      }
+}
+
+@media (max-width:1024px) {
+  .bann-btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+}

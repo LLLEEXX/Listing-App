@@ -1,0 +1,45 @@
+:root{
+    --bg-Color: #272829;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.search-Tab-Container{
+    width: 100vw;
+    min-height: 100vh;
+    height: calc(100vh - 20px);
+    margin-bottom: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("/assets/home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.form-Group-Search-Tab{
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+@media screen and (max-width: 876px){
+    .form-Group-Search-Tab{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.sT-Title h2{
+    color: #fff;
+    font-weight: 700;
+}
+
+  
+ 

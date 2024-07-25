@@ -1,0 +1,79 @@
+{
+  "navbar": {
+    "Home": "Home",
+    "Property Management Services": "Property Service Provider",
+    "Post a Property": "Post a Property",
+    "Login": "Login",
+    "Join": "Join",
+    "Rent": "For Rent",
+    "Sale": "For Sale",
+    "language": "Choose a Language:",
+    "GreetSignIn": "Welcome to Property Web Hub",
+    "Username": "Username",
+    "Password": "Password",
+    "Repassword": "Re-enter Password",
+    "Profile": "Profile",
+    "FirstName": "Firstname",
+    "LastName": "Lastname",
+    "PhoneNum": "Phone Number",
+    "TermsCond": "I agree to",
+    "TermsCondLink": "Terms and Conditions",
+    "Submit": "submit",
+    "Find" : "Find Me a Property"
+  },
+
+  "SearchTab": {
+    "Title": "What are you looking for?",
+    "Action": "Choose an Action",
+    "PropType": "Choose a Property Type",
+    "City": "Enter a City",
+    "Filter": "Filter",
+    "Condo": "Condominium",
+    "HouseLot": "House and Lot",
+    "Lot": "Lot",
+    "WareHouse": "Warehouse",
+    "CommSpace": "Commercial Space",
+    "Off": "Office",
+    "Rent": "Rent",
+    "Buy": "Buy"
+  },
+
+  "FeaturedList": {
+    "Title": "Explore Our Fresh Listing",
+    "subTitle": "Discover some of our latest property listing.",
+    "Condo": "Condominium",
+    "HouseLot": "House and Lot",
+    "Lot": "Lot",
+    "WareHouse": "Warehouse",
+    "CommSpace": "Commercial",
+    "Off": "Office"
+  },
+
+  "Banner": {
+    "Title": "Breathe Easy, We've Got Your Property Covered!",
+    "DesBanner": "We are a one-stop platform that connects you with reliable professionals for all your property maintenance needs. Don't waste time and energy searching for different contractors. Let",
+    "DesBannerTwo": "take care of all your property maintenance needs!",
+    "ServicesBtn": "Explore Services",
+    "ApplyServ": "Apply Your Services",
+    "AdvServ": "Advertise Your Services"
+  },
+
+  "ExpNeigh": {
+    "Title": "Explore Our Neighborhoods",
+    "subTitle": "Take a deep dive and browse our neighborhoods to find a home that is right for you.",
+    "Explore": "Explore"
+  },
+
+  "Footer": {
+    "Soc": "Our Social's",
+    "Comp": "Our Company",
+    "aboutUse": "About Us",
+    "Advertise": "Advertise With Us",
+    "planPri": "Price and Plans",
+    "helpSupp": "Help & Support",
+    "Terms": "Terms and Conditions",
+    "FAQ" : "Help Center",
+    "Community" : "Community Guidelines",
+    "email": "Connect With Us"
+  }
+}

@@ -1,0 +1,629 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+:root {
+  --Sage-Color: #d2e3c8;
+  --teal-Color: #64ccc5;
+  --Dark-Color: #242424;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Main-wrapper {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  margin-top: 60px;
+}
+
+/****************************************/
+/******** START OF NAV BAR CSS ********/
+/***************************************/
+.searchBar {
+  width: 40%;
+  border-width: 4px;
+  border-color: black;
+  transition: box-shadow 0.3s;
+}
+
+.searchBar:hover {
+  box-shadow: 0 0 3px 1px black; /* Adjust the shadow properties as needed */
+}
+.filterBtn {
+  width: 100px;
+  height: 50px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 2px solid var(--Sage-Color);
+  border-radius: 10px;
+  border-radius: 5px;
+  margin-left: 10%;
+}
+
+.filterBtn:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+.exploreNav {
+  margin: auto;
+  align-items: center;
+  padding: 3rem;
+  border-bottom: 1px solid #c2bfbf;
+  max-width: 90%;
+}
+
+.searchBarContainer {
+  margin: auto;
+  max-width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.arrangeContainer {
+  max-width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/****************************************/
+/******** End OF Filter BTN CSS ********/
+/***************************************/
+.propertyTypeList {
+  list-style: none;
+  align-self: center;
+  cursor: pointer;
+}
+
+/****************************************/
+/******** START OF EXPLORE CSS ********/
+/***************************************/
+
+.exploreNav .Logo h3,
+.exploreNav .Logo mark {
+  font-size: 2rem;
+}
+
+
+.exploreCard {
+  border: 1px solid black;
+  height: 360px;
+  width: 307px;
+  border-radius: 15px;
+}
+.exploreImgWrapper {
+  height: 260px;
+  width: 307px;
+  overflow: hidden;
+}
+.exploreImg {
+  object-fit: cover;
+  height: 260px;
+  width: 307px;
+  align-self: center;
+}
+
+@media screen and (max-width: 638px) {
+  .exploreCard {
+    height: 360px;
+    width: 310px;
+  }
+  .exploreImgWrapper {
+    height: 260px;
+    width: 310px;
+  }
+  .exploreImg {
+    height: 260px;
+    width: 310px;
+  }
+}
+/****************************************/
+/******** END OF EXPLORE CSS ********/
+/***************************************/
+
+/****************************************/
+/******** START OF Filter CHECKBOX ********/
+/***************************************/
+
+.checkbox-wrapper-16 *,
+.checkbox-wrapper-16 *:after,
+.checkbox-wrapper-16 *:before {
+  box-sizing: border-box;
+}
+
+.checkbox-wrapper-16 .checkbox-input {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.checkbox-wrapper-16 .checkbox-input:checked + .checkbox-tile {
+  border-color: #2260ff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: #2260ff;
+}
+
+.checkbox-wrapper-16 .checkbox-input:checked + .checkbox-tile:before {
+  transform: scale(1);
+  opacity: 1;
+  background-color: #2260ff;
+  border-color: #2260ff;
+}
+
+.checkbox-wrapper-16 .checkbox-input:checked + .checkbox-tile .checkbox-icon,
+.checkbox-wrapper-16 .checkbox-input:checked + .checkbox-tile .checkbox-label {
+  color: #2260ff;
+}
+
+.checkbox-wrapper-16 .checkbox-input:focus + .checkbox-tile {
+  border-color: #2260ff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc;
+}
+
+.checkbox-wrapper-16 .checkbox-input:focus + .checkbox-tile:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.checkbox-wrapper-16 .checkbox-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  min-height: 5.3rem;
+  border-radius: 0.5rem;
+  border: 2px solid #b5bfd9;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.15s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox-wrapper-16 .checkbox-tile:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid #b5bfd9;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 0.25rem;
+  left: 0.25rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.25s ease;
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.checkbox-wrapper-16 .checkbox-tile:hover {
+  border-color: #2260ff;
+}
+
+.checkbox-wrapper-16 .checkbox-tile:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.checkbox-wrapper-16 .checkbox-label {
+  color: #707070;
+  transition: 0.375s ease;
+  text-align: center;
+}
+
+.filterbtnClear {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95px;
+  min-height: 40px;
+  cursor: pointer;
+  border: none;
+  color: #000;
+  font-size: medium;
+  font-weight: 400;
+}
+
+.filterbtnSubmit {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  background-color: var(--Dark-Color);
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: medium;
+  font-weight: 400;
+  padding: 10px;
+}
+
+/* Price slider */
+
+.price-range-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 500px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.price-range-slider label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.price-range-slider input {
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.slider-range {
+  width: 100%;
+  height: 15px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.slider-min {
+  background-color: #0099ff;
+  border-radius: 5px 0 0 5px;
+}
+
+.slider-max {
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.titleHolder {
+  display: flex;
+  flex-direction: column;
+}
+
+.filterTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.filterTitleDes {
+  font-size: 16px;
+  margin-top: auto;
+  padding-top: 5px; /* Adjust the padding as needed */
+}
+
+/* Bedroom count*/
+
+.bedroom-count-group {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.spanButton {
+  padding: 10px 17px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.bedroom-count-label:last-child {
+  margin-right: 0;
+}
+
+.bedroom-count-label > input[type="radio"] {
+  display: none; /* Hide the radio button */
+}
+
+/* Adjust the checked state */
+.bedroom-count-label > input[type="radio"]:checked + span {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000; /* Optionally add border for visual clarity */
+}
+
+/* Property Type*/
+
+.Radio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-tile-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.radio-tile-group .input-container {
+  position: relative;
+  height: 120px;
+  width: 120px;
+  margin: 0.5rem;
+}
+
+.radio-tile-group .input-container input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.radio-tile-group .input-container .radio-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #c5ccd6;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: transform 300ms ease;
+}
+
+.radio-tile-group .input-container:hover {
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.radio-tile-group .input-container .icon svg {
+  fill: #000;
+  width: 2rem;
+  height: 2rem;
+}
+
+.radio-tile-group .input-container .radio-tile-label {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.radio-tile-group
+  .input-container
+  input[type="checkbox"]:checked
+  + .radio-tile {
+  background-color: white;
+  border: 2px solid #000;
+  color: #000;
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+.radio-tile-group
+  .input-container
+  input[type="checkbox"]:checked
+  + .radio-tile
+  .icon
+  svg {
+  fill: #000;
+  background-color: white;
+  cursor: pointer;
+}
+
+.radio-tile-group
+  .input-container
+  input[type="checkbox"]:checked
+  + .radio-tile
+  .radio-tile-label {
+  color: #000;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Filter radio button style */
+.button-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.rental-button {
+  flex: 1;
+  padding: 20px 16px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rental-button.active {
+  background-color: #000;
+  color: #fff;
+  /* Add any other styles you want for the active state */
+}
+
+@media screen and (max-width: 768px) {
+  .bedroom-count-group {
+    width: 100%;
+    margin-top: 1%;
+  }
+  .price-range-slider {
+    width: 90%;
+  }
+  .searchBar {
+    width: 60%;
+    border-width: 4px;
+    border-color: black;
+    transition: box-shadow 0.3s;
+  }
+  .filterBtn {
+    width: 100px;
+    height: 50px;
+    font-weight: 700;
+    background-color: transparent;
+    border: 2px solid var(--Sage-Color);
+    border-radius: 10px;
+    border-radius: 5px;
+    margin-left: 5%;
+  }
+}
+
+/****************************************/
+/******** END OF FILTER CHECKBOX ********/
+/***************************************/
+
+.Explore-Property-List {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 100%;
+}
+.list-holder{
+  max-width: 90%;
+}
+
+
+.__propArea {
+  color: #7c7671;
+  max-width: 19rem;
+}
+
+.__propCard {
+  max-width: 19rem;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  color: unset;
+  text-decoration: none;
+}
+
+.__propCard:hover {
+  color: unset;
+  text-decoration: none;
+}
+
+.__img {
+  border-radius: 10px;
+  width: 550px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.__favorite {
+  background-color: #fff;
+  border-radius: 8px;
+  color: #db4437;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  padding: 3px 4px;
+  font-size: 22px;
+  line-height: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  border: 0;
+}
+
+.__propCard_detail {
+  box-shadow: 0 4px 15px rgba(175, 77, 0, 0.13);
+  padding: 13px;
+  border-radius: 8px;
+  margin: -30px 10px 0;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.__propCard_detail h5 {
+  color: #474340;
+  line-height: 100%;
+  font-weight: bold;
+}
+
+.__propCard_detail p {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.__propType span {
+  background-color: #feefe3;
+  padding: 5px 10px 7px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 12px;
+  color: #db4437;
+  font-weight: bold;
+  line-height: 100%;
+}
+
+.__propType .newListingName {
+  background-color: #e3f0fe;
+  padding: 5px 10px 7px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 12px;
+  color: #3f51b5;
+  font-weight: bold;
+  line-height: 100%;
+}
+@media (max-width: 1400px) {
+  .__propCard {
+    max-width: 22rem;
+  }
+  .__propArea {
+    max-width: 22rem;
+  }
+  .Explore-Property-List {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .MainExplorePageCont {
+    flex-direction: column;
+  }
+  .__propCard {
+    max-width: 20rem;
+  }
+  .__propArea {
+    max-width: 20rem;
+  }
+  .__img {
+    width: 100%; /* Stretch the image to fit */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

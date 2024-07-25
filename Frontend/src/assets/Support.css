@@ -1,0 +1,13 @@
+.supportContainer {
+    margin-top: 110px;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.displaySupp {
+    width: 20px;
+    height: 20px;
+}

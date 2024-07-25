@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.viewingContainer {
+  margin-top: 80px;
+  max-width: 82%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Header*/
+.row-header-con {
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+.viewingHeader h1,
+h3 {
+  font-weight: bold;
+  color: #0B6BCB;
+}
+
+.viewingHeader h3 {
+  margin-top: 15px;
+  letter-spacing: 0.5px;
+}
+
+.viewingHeader span {
+  color: #3D3D3D;
+  font-size: 18px;
+}
+
+.viewing-buttons button {
+  font-size: 18px;
+  float: inline-end;
+  width: 140px;
+}
+
+/*Gallery*/
+.ImageGalleryBtn {
+  width: 70px;
+}
+
+#gallery {
+  display: grid;
+  margin: 0 auto;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  /* Default grid layout for larger screens */
+  grid-gap: 2px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.photo {
+  grid-row: span 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-span {
+  grid-row: span 2;
+}
+
+.photo-span img {
+  height: 100%;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 5.5s ease;
+  /* Transition effect for zoom */
+}
+
+.photo:hover img {
+  transform: scale(1.1);
+  /* Zoom in on hover */
+}
+
+/*Responsive*/
+@media (min-width:579px) {
+  #gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 580px) and (max-width: 799px) {
+  #gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width:800px) {
+  #gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width:700px) {
+
+  .row-header-con {
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  .viewing-buttons button {
+    margin-top: 20px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .s-items .p-1 {
+    font-size: 15px !important;
+  }
+
+  .viewingHeader {
+    text-align: center;
+  }
+
+  .viewingHeader .priceListing {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .viewingHeader .sub {
+    font-size: 16px;
+  }
+}
+
+/*View Photos Button*/
+.modal-view-btn {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+.v-btn {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0.3, 0.3);
+  height: 38px;
+  background-color: #fff;
+  border: solid 1px #000;
+}
+
+.v-btn:hover {
+  background-color: #fff !important;
+  border: solid 1px #000;
+}
+
+/*Details - Left Div*/
+
+/*Overview*/
+.details-container {
+  margin-top: 30px;
+}
+
+.scrollspy-details {
+  margin-top: 30px;
+}
+
+.s-items .p-1 {
+  font-size: 18px;
+  border: #0B6BCB solid 1px;
+  color: #0B6BCB;
+}
+
+.s-items .p-1:hover {
+  background-color: #0B6BCB !important;
+  color: #fff;
+}
+
+
+.title-details {
+  font-weight: bold;
+  color: #0B6BCB;
+}
+
+.deets p {
+  text-align: justify;
+}
+
+/*See More Button*/
+.see-more,
+.see-less {
+  cursor: pointer;
+  font-size: 16px;
+  color: #000;
+}
+
+.see-more:hover,
+.see-less:hover {
+  color: #0B6BCB;
+}
+
+/*Amenities*/
+#amenities,
+#key-details {
+  margin-top: 30px;
+}
+
+.table-amenities {
+  border-collapse: separate;
+  border-spacing: 8px;
+}
+
+/*Map*/
+#g-map {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 951px) {
+  #g-map {
+    margin-bottom: 9rem;
+  }
+}
+
+/*End of Left Div*/
+
+/*Right Div*/
+.box {
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0.3, 0.3);
+}
+
+.content {
+  margin: 10px 2px;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: clamp(1em, 3vw, 1.3em);
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.job_title {
+  font-size: 13px;
+  font-weight: bolder;
+  color: gray;
+  margin-top: -15px;
+}
+
+.m-year {
+  font-size: 11px;
+  margin-top: -15px;
+  text-transform: uppercase;
+  color: gray;
+}
+
+.button-contact {
+  margin-top: -10px;
+}
+
+/*Right DIV STICKY CSS*/
+.fixedTOp {
+  position: fixed;
+  top: 3%;
+  right: 8.3%;
+  margin-top: 4rem;
+  width: 20rem;
+}
+
+.fixedBottom {
+  position: fixed;
+  max-width: 100rem;
+  bottom: 0;
+  right: 0.5%;
+  background-color: #fff;
+}
+
+.fixedBottom section .box1 .content {
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+
+.fixedBottom section .box1 .content .button-contact {
+  margin-left: auto;
+}
+
+.fixedBottom section .box1 .content .text-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.fixedBottom section .box1 .content .text-details .job_title {
+  flex-direction: column;
+}
+
+
+.fixedBottom section .box {
+  box-shadow: none;
+}
+
+.fixedBottom section .box1 .content .image img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-bottom: none;
+}
+
+@media (max-width: 1400px) {
+  .fixedTOp {
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    margin-top: 4rem;
+    width: 15rem;
+  }
+}
+
+/* Gold Text */
+.goldTxt {
+  font-weight: bold;
+  color: #af9814;
+
+}
+
+/*End of Right Div*/
